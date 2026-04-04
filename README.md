@@ -17,19 +17,12 @@ Replace this paragraph with your own summary of what your version does.
 
 ## How The System Works
 
-Explain your design in plain language.
+While apps like Spotify usually recommend music by comparing your listening habits to millions of other users, this project focuses entirely on the actual vibe of the music itself. It builds your custom taste profile and scores every song based on how well its tempo, energy, mood, and genre match exactly what you're looking for. The highest-scoring tracks then become your personal recommendations. Just keep in mind that genre carries the most weight, meaning a perfect-sounding track in the wrong genre might still lose out to an average song in your preferred category.
 
-Some prompts to answer:
-
-- What features does each `Song` use in your system
-  - For example: genre, mood, energy, tempo
-- What information does your `UserProfile` store
-- How does your `Recommender` compute a score for each song
-- How do you choose which songs to recommend
-
-You can include a simple diagram or bullet list if helpful.
-
+Algorithm Recipe
+The system starts with a personal taste profile — a small snapshot of your preferences that captures your favorite genre and mood, plus how energetic, emotionally uplifting, fast, danceable, and acoustic you like your music to be. For every song in the catalog, it calculates a score by awarding points when the genre and mood match your preferences, then adding further points based on how closely each song's energy, emotional brightness, tempo, danceability, and acoustic character line up with your targets — the closer the match on each quality, the more points it earns. Once every song has a score, the list is sorted from highest to lowest and the top few songs rise to the surface as your personalized recommendations. One honest caveat: genre carries the single largest fixed point value of any feature, so a song that perfectly matches your mood and energy but belongs to the wrong genre will always rank below a song that shares your genre but misses on everything else — meaning the system can feel like it over-rewards genre loyalty at the expense of how a song actually sounds.
 ---
+
 
 ## Getting Started
 
