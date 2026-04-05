@@ -136,7 +136,7 @@ Combines reflection and model card framing from the Module 3 guidance. :contentR
 
 ## 1. Model Name
 
-**VibeMatch 1.0**
+**SonicViber 1.0**
 
 ---
 

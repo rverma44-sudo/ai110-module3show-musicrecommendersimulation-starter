@@ -2,7 +2,7 @@
 
 ## 1. Model Name
 
-**VibeMatch 1.0**
+**SonicViber 1.0**
 
 ---
 
